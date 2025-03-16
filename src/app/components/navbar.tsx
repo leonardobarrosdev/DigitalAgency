@@ -1,7 +1,15 @@
 'use client';
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import logo from 'assets/img/navbar-logo.svg';
+
+declare global {
+  interface Window {
+    bootstrap: {
+      ScrollSpy: new (element: Element, options: { target: string; rootMargin: string }) => void;
+    };
+  }
+}
 
 export function Nav() {
   const navbarRef = useRef<HTMLDivElement>(null);
