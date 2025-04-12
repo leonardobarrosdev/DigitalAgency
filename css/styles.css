@@ -45,3 +45,11 @@
 .banner-cookie .btn:hover {background: #006af5;}
 a {color: #004AAD;}
 a:hover {color: #006af5;}
+
+/* Team */
+.member-bio {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
